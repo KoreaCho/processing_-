@@ -1,0 +1,49 @@
+
+
+int x = 0;
+
+
+
+void setup () {
+size (600,400);
+ background(255);
+frameRate(1000);
+
+
+
+}
+void draw() {
+  
+  ellipse (10,300,100,100);
+  fill(34);
+  
+  ellipse ( 590,300,100,100);
+  fill(34);
+  
+  background(255); 
+ 
+  fill(3422,random(255),random(255),144);
+  ellipse (x,100,100,100);
+  stroke(200);
+  
+  
+}
+
+
+
+void keyPressed() {
+  
+  if (keyCode== LEFT) {
+  
+  x = x-  40;  }
+  
+  if (keyCode == RIGHT) {
+    x =x +   40 ;
+  }
+  
+}
+  
+  
+  
+  
+  
