@@ -1,0 +1,39 @@
+int x1 = 0;
+int y1 = 0;
+int x2 = 600;
+int y2 = 200;
+int speedx1 = 10;
+int speedy1 = 10;
+int speedx2 = 10;
+int speedy2 = 10;
+void setup () {
+  
+  size(600,400);
+}
+
+
+void draw()  {
+  
+  background(255);
+  ellipse(x1,y1,50,50);
+  fill(0,255,0);
+  x1 = x1 + speedx1;
+  if (x1>width || x1 <0 ) {
+    speedx1 = speedx1 * -1; 
+  }
+  y1 = y1 +speedy1;
+  if (y1>height || y1 <0) {
+    speedy1 = speedy1 * -1;
+  }
+  
+   ellipse(x2,y2,50,50);
+  fill(0,0,255);
+  x2 = x2 + speedx2;
+  if (x2>width || x2 <0 ) {
+    speedx2 = speedx2 * -1; 
+  }
+  y2 = y2 +speedy2;
+  if (y2>height || y2<0) {
+    speedy2 = speedy2 * -1;
+  }
+}
